@@ -170,9 +170,12 @@ public class PlayerSaveData
             loaded.SetFilePath(filePath);
 
             
-            int count = loaded.completionRecordData.Count;
-            int nextId = loaded.completionRecordData[count-1].id;
-            LevelCompletionRecord.SetNextId(nextId+1);
+            if (loaded.completionRecordData.Count > 0)
+            {
+                int count = loaded.completionRecordData.Count;
+                int nextId = loaded.completionRecordData[count - 1].id;
+                LevelCompletionRecord.SetNextId(nextId + 1);
+            }
 
             return loaded;
         }

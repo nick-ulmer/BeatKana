@@ -32,4 +32,5 @@ MonoBehaviour:
     minScore: 400
     requiredLevels:
     - {fileID: 11400000, guid: 0723f2178be5d4e43a98559bab4c13d4, type: 2}
-  Notes: 
+  Notes: "This level demonstrates the letters \u3046 and \u3048 through the word
+    \u4E0A meaning up."

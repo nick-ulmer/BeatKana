@@ -77,3 +77,7 @@ crashlytics-build.properties
 
 # Temp App Build Files
 /.utmp/*
+
+# Annoying Font Files: Necessary changes should regenerate every time
+Assets/Fonts/NotoSansSC-Regular SDF.asset
+Assets/Fonts/NotoSansSC-Regular SDF.asset.meta
