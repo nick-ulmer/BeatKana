@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor.Overlays;
 using UnityEngine;
 
 [System.Serializable]
@@ -27,6 +26,7 @@ public class PlayerSaveData
         playerSaveId = Guid.NewGuid().ToString();
         saveVersion = CURRENT_SAVE_VERSION; // increment when notable changes are made after release
         bestLevelData = new List<LevelSaveData>();
+        completionRecordData = new List<LevelCompletionRecord>();
         LevelSaveData_Dictionary = new Dictionary<string, LevelSaveData>();
     } // constructor
 
