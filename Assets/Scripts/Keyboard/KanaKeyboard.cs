@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class KanaKeyboard : MonoBehaviour
 {
-    //TMP_InputField inputField;
     InputString InputString;
     KanaButtonGuide KanaButtonGuide;
 
     [SerializeField] KanaButton BigAKanaButton;
-    KanaButton[] KanaButtons;
 
     public void SetDakutenSpecialKeys(string[] keys) { this.dakutenSpecialKeys = keys; }
     string[] dakutenSpecialKeys = new string[5];
@@ -26,8 +24,6 @@ public class KanaKeyboard : MonoBehaviour
             kanaButton.Init();
         }
 
-        //inputField = GameManager.inputField;
-        //InputString = GameManager.InputString;
         KanaButtonGuide = gameObject.GetComponentInChildren<KanaButtonGuide>();
         KanaButtonGuide.Initialize();
         KanaButtonGuideDeactivate();

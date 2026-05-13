@@ -23,7 +23,7 @@ public class TouchManager : MonoBehaviour
     void Start()
     {
         EnhancedTouchSupport.Enable();
-        TouchSimulation.Enable();
+        //TouchSimulation.Enable(); // Unnecessary even in editor mode. Caused a bug that forced you to "drag" in order to activate the actual menu. 
     }
 
     public static TouchManager instance;
