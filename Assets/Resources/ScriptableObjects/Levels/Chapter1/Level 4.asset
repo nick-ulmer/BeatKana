@@ -15,8 +15,8 @@ MonoBehaviour:
   LevelName: Level 4
   levelType: 0
   difficulty:
-    BPM: 60
-    BeatDistance: 1
+    BPM: 20
+    BeatDistance: 3
     maxBeatError: 0.2
     hideKana: 0
     mute: 0
@@ -32,3 +32,5 @@ MonoBehaviour:
     minScore: 1200
     requiredLevels:
     - {fileID: 11400000, guid: d60feba8058469c4896dd70733cc556b, type: 2}
+  Notes: This is a notes section used to detail a level's purpose and what it introduces
+    to the player.

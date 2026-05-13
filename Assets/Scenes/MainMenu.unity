@@ -1785,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d60feba8058469c4896dd70733cc556b, type: 2}
     - target: {fileID: 4887278613871294650, guid: d59da864f0256764a9963fe65d4dbe74, type: 3}
       propertyPath: displayText
-      value: "<line-height=65%>\u611B \u3042\u3044 down"
+      value: "<line-height=65%>\u3042\u304A"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2937,7 +2937,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a3953931c6d714a48b7cd937ba2d58dc, type: 2}
     - target: {fileID: 4887278613871294650, guid: d59da864f0256764a9963fe65d4dbe74, type: 3}
       propertyPath: displayText
-      value: "<line-height=65%>\u611B \u3042\u3044 up"
+      value: "<line-height=65%>\u3046\u3048"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3849,6 +3849,10 @@ PrefabInstance:
     - target: {fileID: 5123526935861017785, guid: 073ddc62e56d6c5eb952a76a164e7846, type: 3}
       propertyPath: m_Name
       value: Chapter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053315602551787260, guid: 073ddc62e56d6c5eb952a76a164e7846, type: 3}
+      propertyPath: displayText
+      value: "<line-height=65%>\u3042\u3044"
       objectReference: {fileID: 0}
     - target: {fileID: 6081404776234355728, guid: 073ddc62e56d6c5eb952a76a164e7846, type: 3}
       propertyPath: m_AnchorMax.y

@@ -15,15 +15,15 @@ MonoBehaviour:
   LevelName: Level 2
   levelType: 0
   difficulty:
-    BPM: 60
-    BeatDistance: 1
+    BPM: 20
+    BeatDistance: 3
     maxBeatError: 0.2
     hideKana: 0
     mute: 0
   beatElementsBank:
-  - {fileID: 11400000, guid: 980624504f6194140bedd337e659b6c6, type: 2}
   - {fileID: 11400000, guid: 2cf0b89756d3e8845b7918769e8111b5, type: 2}
   - {fileID: 11400000, guid: 095cce8235dd0fc439111b6d3938eeae, type: 2}
+  - {fileID: 11400000, guid: 980624504f6194140bedd337e659b6c6, type: 2}
   beatCounts:
     levelPreBeats: 3
     betweenBeats: 1
