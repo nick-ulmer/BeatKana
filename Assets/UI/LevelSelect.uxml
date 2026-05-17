@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+
+    <Style src="./BeatKana.uss" />
+
+    <ui:VisualElement name="level-select-screen" class="screen level-select-screen">
+
+        <ui:Button name="btn-back" text="BACK" class="btn btn--back" />
+
+        <ui:VisualElement class="level-select-header">
+            <ui:Label text="SELECT LEVEL" class="screen-title" />
+        </ui:VisualElement>
+
+        <ui:ScrollView name="level-scroll"
+                       class="level-scroll"
+                       mode="Horizontal"
+                       horizontal-scroller-visibility="Hidden"
+                       vertical-scroller-visibility="Hidden">
+
+            <ui:VisualElement name="level-strip" class="level-strip">
+                <ui:Button name="btn-level-1" text="あ" class="level-rect selected-level" />
+                <ui:Button name="btn-level-2" text="い" class="level-rect" />
+                <ui:Button name="btn-level-3" text="う" class="level-rect" />
+                <ui:Button name="btn-level-4" text="え" class="level-rect" />
+            </ui:VisualElement>
+
+        </ui:ScrollView>
+
+        <ui:VisualElement name="level-detail-panel" class="level-detail-panel">
+
+            <ui:VisualElement class="level-detail-text">
+                <ui:Label name="detail-title" text="Level 1 — あ" class="detail-title" />
+                <ui:Label name="detail-subtitle" text="Vowel Rhythm" class="detail-subtitle" />
+                <ui:Label name="detail-description"
+                          text="Practice recognizing and timing あ in simple rhythm patterns."
+                          class="detail-description" />
+            </ui:VisualElement>
+
+            <ui:Button name="btn-play-level" text="PLAY" class="btn btn--accent play-level-button" />
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+
+</ui:UXML>

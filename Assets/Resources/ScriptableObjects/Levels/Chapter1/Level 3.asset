@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Level
   LevelName: Level 3
   levelType: 0
+  menuFields:
+    name: "\u611B \u3042\u3044 Love"
+    description: Learn Love!
   difficulty:
     BPM: 20
     BeatDistance: 3

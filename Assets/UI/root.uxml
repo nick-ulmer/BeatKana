@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="./BeatKana.uss" />
+    
+    <ui:VisualElement class="root">
+    </ui:VisualElement>
+</ui:UXML>

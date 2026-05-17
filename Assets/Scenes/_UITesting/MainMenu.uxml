@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement class="root">
+
+        <!-- Main Menu -->
+        <ui:VisualElement name="main-menu" class="menu-panel">
+            <ui:Label text="BeatKana" class="title" />
+            <ui:Label text="Main Menu" class="subtitle" />
+
+            <ui:Button text="Play" name="play-button" class="menu-button" />
+            <ui:Button text="Endless" name="endless-button" class="menu-button" />
+            <ui:Button text="Guides" name="guides-button" class="menu-button" />
+            <ui:Button text="Settings" name="settings-button" class="menu-button" />
+            <ui:Button text="Quit" name="quit-button" class="menu-button quit-button" />
+        </ui:VisualElement>
+
+        <!-- Level Select Menu -->
+        <ui:VisualElement name="level-menu" class="menu-panel hidden">
+            <ui:Label text="Select Level" class="title" />
+
+            <ui:Button text="Level 1 - Basics" name="level-1-button" class="menu-button" />
+            <ui:Button text="Level 2 - Rhythm" name="level-2-button" class="menu-button" />
+            <ui:Button text="Level 3 - Speed" name="level-3-button" class="menu-button" />
+            <ui:Button text="Level 4 - Challenge" name="level-4-button" class="menu-button" />
+
+            <ui:Button text="Back" name="level-back-button" class="menu-button back-button" />
+        </ui:VisualElement>
+
+        <!-- Settings Menu -->
+        <ui:VisualElement name="settings-menu" class="menu-panel hidden">
+            <ui:Label text="Settings" class="title" />
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="Master Volume" class="setting-label" />
+                <ui:Slider name="master-volume-slider" low-value="0" high-value="1" value="0.8" class="volume-slider" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="Music Volume" class="setting-label" />
+                <ui:Slider name="music-volume-slider" low-value="0" high-value="1" value="0.8" class="volume-slider" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="SFX Volume" class="setting-label" />
+                <ui:Slider name="sfx-volume-slider" low-value="0" high-value="1" value="0.8" class="volume-slider" />
+            </ui:VisualElement>
+
+            <ui:Button text="Back" name="settings-back-button" class="menu-button back-button" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

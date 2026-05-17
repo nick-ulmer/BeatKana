@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="./BeatKana.uss" />
+
+    <ui:VisualElement name="chapter-select-screen" class="screen">
+        <ui:VisualElement class="panel panel--wide">
+
+            <ui:Button name="btn-back" text="← BACK" class="btn btn--back" />
+
+            <ui:Label text="CHAPTER SELECT" class="screen-title" />
+            <ui:Label text="章を選ぶ" class="screen-title-kana" />
+
+            <ui:VisualElement class="chapter-grid">
+
+                <!-- Chapter 1 -->
+                <ui:Button name="btn-chapter-1" class="chapter-card">
+                    <ui:Label text="CHAPTER 01" class="chapter-number" />
+                    <ui:Label text="Hiragana Basics" class="chapter-name" />
+                    <ui:Label text="あいうえお" class="chapter-kana" />
+                    <ui:Label text="The five vowels. Where every word begins." class="chapter-desc" />
+                </ui:Button>
+
+                <!-- Chapter 2 -->
+                <ui:Button name="btn-chapter-2" class="chapter-card">
+                    <ui:Label text="CHAPTER 02" class="chapter-number" />
+                    <ui:Label text="Consonants" class="chapter-name" />
+                    <ui:Label text="かさたな" class="chapter-kana" />
+                    <ui:Label text="Core consonant rows and their kana." class="chapter-desc" />
+                </ui:Button>
+
+                <!-- Chapter 3 -->
+                <ui:Button name="btn-chapter-3" class="chapter-card">
+                    <ui:Label text="CHAPTER 03" class="chapter-number" />
+                    <ui:Label text="Dakuten" class="chapter-name" />
+                    <ui:Label text="がざだば" class="chapter-kana" />
+                    <ui:Label text="Voiced consonants with the dakuten mark." class="chapter-desc" />
+                </ui:Button>
+
+                <!-- Chapter 4 -->
+                <ui:Button name="btn-chapter-4" class="chapter-card">
+                    <ui:Label text="CHAPTER 04" class="chapter-number" />
+                    <ui:Label text="Combinations" class="chapter-name" />
+                    <ui:Label text="きゃにゅびょ" class="chapter-kana" />
+                    <ui:Label text="Palatalized compound kana." class="chapter-desc" />
+                </ui:Button>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="./BeatKana.uss" />
+
+    <ui:VisualElement name="level-select-screen" class="screen">
+        <ui:VisualElement class="panel panel--wide">
+
+            <ui:Button name="btn-back" text="← BACK" class="btn btn--back" />
+
+            <!-- Breadcrumb -->
+            <ui:VisualElement class="breadcrumb">
+                <ui:Label text="CHAPTERS" class="breadcrumb-text" />
+                <ui:Label text="/" class="breadcrumb-sep" />
+                <ui:Label name="breadcrumb-chapter" text="CHAPTER 01" class="breadcrumb-current" />
+            </ui:VisualElement>
+
+            <ui:Label name="level-select-title" text="Hiragana Basics" class="screen-title" />
+            <ui:Label name="level-select-kana" text="あいうえお" class="screen-title-kana" />
+
+            <ui:VisualElement name="level-grid" class="level-grid">
+
+                <ui:Button name="btn-level-1" class="level-card">
+                    <ui:Label text="LEVEL 1" class="level-number" />
+                    <ui:Label text="Level 1" class="level-name" />
+                </ui:Button>
+
+                <ui:Button name="btn-level-2" class="level-card">
+                    <ui:Label text="LEVEL 2" class="level-number" />
+                    <ui:Label text="Level 2" class="level-name" />
+                </ui:Button>
+
+                <ui:Button name="btn-level-3" class="level-card">
+                    <ui:Label text="LEVEL 3" class="level-number" />
+                    <ui:Label text="Level 3" class="level-name" />
+                </ui:Button>
+
+                <ui:Button name="btn-level-4" class="level-card">
+                    <ui:Label text="LEVEL 4" class="level-number" />
+                    <ui:Label text="Level 4" class="level-name" />
+                </ui:Button>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -25,6 +25,18 @@ public class Level : ScriptableObject
     #endregion
 
     #region Define structs & enums
+    [Serializable] 
+    public struct MenuFields
+    {
+        public string name;
+        public string description;
+        public MenuFields(string name, string description)
+        {
+            this.name = name;
+            this.description = description;
+        }
+    }
+
     [Serializable]
     public struct DifficultyFields
     {
@@ -74,6 +86,7 @@ public class Level : ScriptableObject
     // Used as an ID to make sure that where ever a level is being loaded (the button, the level, etc), it can also use the proper saved data there. 
     public string LevelName = string.Empty; // Technically also an ID
     public LevelType levelType = LevelType.Beat; 
+    public MenuFields menuFields = new MenuFields("<line-height=65%>愛 あい Love", "Learn Love!");
     public DifficultyFields difficulty = new DifficultyFields(60, 1.0f, 0.2f, false, false); 
     public BeatElement[] beatElementsBank; // Assume in order for now. 
     public BeatCounts beatCounts = new BeatCounts(3, 1, 2); // Only valid for LevelType.Beat
