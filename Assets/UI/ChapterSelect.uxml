@@ -1,34 +1,26 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <Style src="./BeatKana.uss" />
 
-    <!-- Screen -> Panel -> grid -> scroll -> elements -->
+    <!-- #region Chapter Select -->
     <ui:VisualElement name="chapter-select-screen" class="screen">
         <ui:VisualElement class="panel panel--wide">
-
             <ui:Button name="btn-back" text="← BACK" class="btn btn--back" />
-
             <ui:Label text="CHAPTER SELECT" class="screen-title" />
 
-            <ui:VisualElement class="chapter-grid">
-                
-                <ui:ScrollView name="level-scroll"
-                                class="chapter-scroll"
-                                mode="Vertical"
-                                horizontal-scroller-visibility="Hidden"
-                                vertical-scroller-visibility="Hidden">
-
-                    <ui:VisualElement name="chapter-strip" class="chapter-strip">
-                        <ui:Button name="btn-chapter-1" text="Chapter 1" class="chapter-rect" />
-                        <ui:Button name="btn-chapter-2" text="い" class="chapter-rect" />
-                        <ui:Button name="btn-chapter-3" text="う" class="chapter-rect" />
-                        <ui:Button name="btn-chapter-4" text="え" class="chapter-rect" />
-                    </ui:VisualElement>
-
-                </ui:ScrollView>
-
-
-            </ui:VisualElement>
-
+            <ui:ScrollView name="level-scroll"
+                           class="scroll-area chapter-scroll"
+                           mode="Vertical"
+                           horizontal-scroller-visibility="Hidden"
+                           vertical-scroller-visibility="Hidden">
+                <ui:VisualElement name="chapter-strip" class="strip chapter-strip">
+                    <!-- Buttons will be overridden in UIManager.cs -->
+                    <ui:Button name="btn-chapter-1" text="Chapter 1" class="chapter-rect" />
+                    <ui:Button name="btn-chapter-2" text="い" class="chapter-rect" />
+                    <ui:Button name="btn-chapter-3" text="う" class="chapter-rect" />
+                    <ui:Button name="btn-chapter-4" text="え" class="chapter-rect" />
+                </ui:VisualElement>
+            </ui:ScrollView>
         </ui:VisualElement>
     </ui:VisualElement>
+    <!-- #endregion -->
 </ui:UXML>

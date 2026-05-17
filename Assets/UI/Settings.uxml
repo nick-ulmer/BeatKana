@@ -1,37 +1,27 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <Style src="./BeatKana.uss" />
 
+    <!-- #region Settings -->
     <ui:VisualElement name="settings-screen" class="screen">
         <ui:VisualElement class="panel">
-
             <ui:Button name="btn-back" text="← BACK" class="btn btn--back" />
-
             <ui:Label text="SETTINGS" class="screen-title" />
 
-            <!-- Master Volume -->
             <ui:VisualElement class="setting-row">
-                <ui:VisualElement class="setting-label-group">
-                    <ui:Label text="MASTER" class="setting-label" />
-                </ui:VisualElement>
+                <ui:Label text="MASTER" class="setting-label" />
                 <ui:Slider name="slider-master" low-value="0" high-value="1" value="1" class="unity-slider" />
             </ui:VisualElement>
 
-            <!-- Tick Volume -->
             <ui:VisualElement class="setting-row">
-                <ui:VisualElement class="setting-label-group">
-                    <ui:Label text="METRONOME" class="setting-label" />
-                </ui:VisualElement>
+                <ui:Label text="METRONOME" class="setting-label" />
                 <ui:Slider name="slider-tick" low-value="0" high-value="1" value="1" class="unity-slider" />
             </ui:VisualElement>
 
-            <!-- Kana Volume -->
             <ui:VisualElement class="setting-row">
-                <ui:VisualElement class="setting-label-group">
-                    <ui:Label text="KANA" class="setting-label" />
-                </ui:VisualElement>
+                <ui:Label text="KANA" class="setting-label" />
                 <ui:Slider name="slider-kana" low-value="0" high-value="1" value="1" class="unity-slider" />
             </ui:VisualElement>
-
         </ui:VisualElement>
     </ui:VisualElement>
+    <!-- #endregion -->
 </ui:UXML>

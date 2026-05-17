@@ -1,10 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 using System;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("GameManager Room Initializables")]
+    [SerializeField] AudioManager AudioManager;
+    [SerializeField] Camera Camera;
+
+    [Header("UI Documents")]
     [SerializeField] UIDocument mainMenuDoc;
     [SerializeField] UIDocument settingsDoc;
     [SerializeField] UIDocument chapterSelectDoc;
@@ -21,6 +27,9 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
+        GameManager.AudioManager = AudioManager;
+        GameManager.cam = Camera;
+
         _mainMenuRoot = mainMenuDoc.rootVisualElement;
         _settingsRoot = settingsDoc.rootVisualElement;
         _chapterSelectRoot = chapterSelectDoc.rootVisualElement;
@@ -111,10 +120,31 @@ public class UIManager : MonoBehaviour
             Button levelButton = new Button
             {
                 name = $"btn-level-{i + 1}",
-                text = ToVerticalText(level.LevelName)
+                text = "" // important: don't use built-in text if adding custom content
             };
 
             levelButton.AddToClassList("level-rect");
+
+            VisualElement textColumn = new VisualElement();
+            textColumn.AddToClassList("level-vertical-text");
+
+            foreach (char c in level.menuFields.name)
+            {
+                if (c == ' ')
+                {
+                    VisualElement space = new VisualElement();
+                    space.AddToClassList("vertical-text-space");
+                    textColumn.Add(space);
+                }
+                else
+                {
+                    Label charLabel = new Label(c.ToString());
+                    charLabel.AddToClassList("vertical-text-char");
+                    textColumn.Add(charLabel);
+                }
+            }
+
+            levelButton.Add(textColumn);
 
             levelButton.clicked += () =>
             {
@@ -171,6 +201,9 @@ public class UIManager : MonoBehaviour
 
         // Later:
         // SceneManager.LoadScene(_selectedLevel.sceneName);
+
+        GameManager.SetLevel(_selectedLevel);
+        SceneManager.LoadScene("Scenes/PlayScene", LoadSceneMode.Single);
     }
 
     void ShowScreen(UIDocument doc)

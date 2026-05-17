@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f057d122c9bd12449f745c491ac0d42, type: 3}
-  m_Name: Level 1
+  m_Name: 1 all_five
   m_EditorClassIdentifier: Assembly-CSharp::Level
-  LevelName: Level 1
+  LevelName: 1 all_five
   levelType: 1
   menuFields:
-    name: "\u611B \u3042\u3044 Love"
-    description: Learn Love!
+    name: "\u3042\u3044\u3046\u3048\u304A"
+    description: Learn the button. Learn the vowel.
   difficulty:
     BPM: 20
     BeatDistance: 3
@@ -26,7 +26,9 @@ MonoBehaviour:
   beatElementsBank:
   - {fileID: 11400000, guid: 969419b9d9a786f4f8c38e596a9905cf, type: 2}
   - {fileID: 11400000, guid: 7f789903c1da5f942bddc87b230415f1, type: 2}
-  - {fileID: 11400000, guid: ab352d0730039c54996d820c0c9c6219, type: 2}
+  - {fileID: 11400000, guid: 2cf0b89756d3e8845b7918769e8111b5, type: 2}
+  - {fileID: 11400000, guid: 095cce8235dd0fc439111b6d3938eeae, type: 2}
+  - {fileID: 11400000, guid: e409d92e7a9716d41b67eec2743ea671, type: 2}
   beatCounts:
     levelPreBeats: 2
     betweenBeats: 1
@@ -34,5 +36,4 @@ MonoBehaviour:
   prereqs:
     minScore: 0
     requiredLevels: []
-  Notes: "This level demonstrates the letters \u3042 and \u3044 through the word
-    \u611B meaning love. "
+  Notes: 'Show the first 5 vowels '

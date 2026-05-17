@@ -1,14 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="./BeatKana.uss" />
+
+    <!-- #region Main Menu -->
     <ui:VisualElement name="main-menu-screen" class="screen">
         <ui:VisualElement class="panel">
-            <ui:Label name="logo-kana" text="ビートかな" class="logo-kana"/>
-            <ui:Label text="BEAT KANA" class="logo-title"/>
-            <ui:Button name="btn-play" text="PLAY" class="btn btn--accent"/>
-            <ui:Button name="btn-endless" text="ENDLESS" class="btn"/>
-            <ui:Button name="btn-guide" text="GUIDE" class="btn"/>
-            <ui:Button name="btn-settings" text="SETTINGS" class="btn"/>
-            <ui:Button name="btn-exit" text="EXIT" class="btn btn--danger hidden"/>
+            <ui:Label name="logo-kana" text="ビートかな" class="logo-kana" />
+            <ui:Label text="BEAT KANA" class="logo-title" />
+
+            <ui:Button name="btn-play" text="PLAY" class="btn btn--accent" />
+            <ui:Button name="btn-endless" text="ENDLESS" class="btn" />
+            <ui:Button name="btn-guide" text="GUIDE" class="btn" />
+            <ui:Button name="btn-settings" text="SETTINGS" class="btn" />
+            <ui:Button name="btn-exit" text="EXIT" class="btn btn--danger hidden" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <!-- #endregion -->
 </ui:UXML>

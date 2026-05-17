@@ -222,6 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feafc9febd6c93463a46dacb87da2e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  AudioManager: {fileID: 5176620725878303050}
+  Camera: {fileID: 1937516041}
   mainMenuDoc: {fileID: 3501871305124638485}
   settingsDoc: {fileID: 2648425343989066932}
   chapterSelectDoc: {fileID: 5795823501795896876}
@@ -230,7 +232,7 @@ MonoBehaviour:
   - Title: Chapter 1
     Description: Hi
     Levels:
-    - {fileID: 11400000, guid: 0723f2178be5d4e43a98559bab4c13d4, type: 2}
+    - {fileID: 11400000, guid: b551beca5c54322a9b8f76f054f305bb, type: 2}
     - {fileID: 11400000, guid: a3953931c6d714a48b7cd937ba2d58dc, type: 2}
     - {fileID: 11400000, guid: d60feba8058469c4896dd70733cc556b, type: 2}
     - {fileID: 11400000, guid: d60feba8058469c4896dd70733cc556b, type: 2}
@@ -356,7 +358,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714689724}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -373,7 +375,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714689724}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
