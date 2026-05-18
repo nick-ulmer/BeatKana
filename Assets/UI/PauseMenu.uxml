@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+
+    <Style src="./BeatKana.uss" />
+
+    <ui:VisualElement name="pause-screen" class="screen">
+        <ui:VisualElement class="panel">
+
+            <ui:Label text="PAUSED" class="screen-title" />
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="MASTER" class="setting-label" />
+                <ui:Slider name="pause-slider-master"
+                           low-value="0"
+                           high-value="1"
+                           value="1"
+                           class="unity-slider" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="METRONOME" class="setting-label" />
+                <ui:Slider name="pause-slider-tick"
+                           low-value="0"
+                           high-value="1"
+                           value="1"
+                           class="unity-slider" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="setting-row">
+                <ui:Label text="KANA" class="setting-label" />
+                <ui:Slider name="pause-slider-kana"
+                           low-value="0"
+                           high-value="1"
+                           value="1"
+                           class="unity-slider" />
+            </ui:VisualElement>
+
+            <ui:Button name="btn-retry" text="RETRY?" class="btn btn--accent" />
+            <ui:Button name="btn-main-menu" text="MAIN MENU" class="btn" />
+            <ui:Button name="btn-unpause" text="UNPAUSE" class="btn" />
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+</ui:UXML>
